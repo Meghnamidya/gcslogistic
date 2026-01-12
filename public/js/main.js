@@ -75,7 +75,8 @@
     });
 
 
-    // Header carousel
+    // Header carousel - Disabled (not in use)
+    /*
     $(".header-carousel").owlCarousel({
         autoplay: false,
         smartSpeed: 1500,
@@ -88,9 +89,11 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
+    */
 
 
-    // Testimonials carousel
+    // Testimonials carousel - Disabled (converted to blog)
+    /*
     $(".testimonial-carousel").owlCarousel({
         autoplay: false,
         smartSpeed: 1000,
@@ -109,6 +112,7 @@
             }
         }
     });
+    */
     
 })(jQuery);
 

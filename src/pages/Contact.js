@@ -35,7 +35,7 @@ function Contact() {
                       <i className="fas fa-phone" style={{transform: 'scaleX(-1)'}}></i>
                     </div>
                     <h3 className="mb-3" style={{fontSize: '18px', fontWeight: '600', color: '#ffffff'}}>Contact Number</h3>
-                    <p style={{fontSize: '15px', marginBottom: '0', color: '#000000'}}><a href="tel:+919876543210" style={{color: '#000000', textDecoration: 'none', fontWeight: '500'}}>+91 98765 43210</a></p>
+                    <p style={{fontSize: '15px', marginBottom: '0', color: '#000000'}}><a href="tel:+917003687053" style={{color: '#000000', textDecoration: 'none', fontWeight: '500'}}>+91 7003687053</a></p>
                   </div>
                 </div>
                 <div className="col-6 wow fadeInUp" data-wow-delay="0.7s">

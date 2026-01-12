@@ -14,22 +14,63 @@ function About() {
               </div>
             </div>
             <div className="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
-              <h6 className="text-secondary text-uppercase mb-3">Who We Are</h6>
-              <h1 className="mb-5">GCS Logistics | Trusted Supply Chain Partner</h1>
-              <p className="mb-5">GCS Logistics delivers end-to-end transportation, shipping, and warehousing solutions. With a strong network, technology-driven operations, and a skilled team, we ensure smooth, efficient, and safe delivery for businesses across industries.</p>
-              <div className="row g-4 mb-5">
-                <div className="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                  <i className="fa fa-globe fa-3x text-primary mb-3"></i>
-                    <h5>Pan-India & Global Network</h5>
-                    <p className="m-0">Wide transportation network covering major cities, ports, airports, and industrial hubs.</p>
+              <h6 className="text-secondary text-uppercase mb-3">About Us</h6>
+              <h1 className="mb-4">About GCS Logistic Company</h1>
+              <p className="mb-4">GCS Logistic & Shipping Company is a professional freight forwarding and logistics service provider offering complete transportation and supply chain solutions under one roof. With a strong network of carriers, agents, and port partners, we handle shipments efficiently from origin to destination.</p>
+              <p className="mb-5">We work with exporters, importers, manufacturers, traders, and individual clients to ensure smooth movement of goods across borders. Our experienced team manages every step — documentation, customs compliance, freight booking, warehousing, and delivery — so you can focus on your business.</p>
+              <div className="row g-4 mb-4">
+                <div className="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                  <div className="d-flex align-items-start">
+                    <i className="fa fa-bullseye fa-2x text-primary me-3"></i>
+                    <div>
+                      <h5 className="mb-2">Our Vision</h5>
+                      <p className="m-0">To become a trusted global logistics partner known for reliability, transparency, and customer satisfaction.</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                  <i className="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                  <h5>On Time Delivery</h5>
-                    <p className="m-0">GPS-enabled fleet and smart route optimization ensure timely deliveries every time.</p>
+                <div className="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                  <div className="d-flex align-items-start">
+                    <i className="fa fa-rocket fa-2x text-primary me-3"></i>
+                    <div>
+                      <h5 className="mb-2">Our Mission</h5>
+                      <p className="m-0">To deliver safe, timely, and cost-effective logistics solutions through innovation, teamwork, and continuous improvement.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <a href="/services" className="btn btn-primary py-3 px-5">Explore More</a>
+              <h6 className="text-secondary text-uppercase mt-5 mb-3">Why Choose Us</h6>
+              <div className="row g-4 mb-4">
+                <div className="col-12 wow fadeIn" data-wow-delay="0.6s">
+                  <div className="d-flex align-items-center">
+                    <i className="fa fa-user-tie fa-2x text-primary me-3"></i>
+                    <h5 className="mb-0">Professional and experienced team</h5>
+                  </div>
+                </div>
+                <div className="col-12 wow fadeIn" data-wow-delay="0.7s">
+                  <div className="d-flex align-items-center">
+                    <i className="fa fa-cogs fa-2x text-primary me-3"></i>
+                    <h5 className="mb-0">Customized shipping solutions</h5>
+                  </div>
+                </div>
+                <div className="col-12 wow fadeIn" data-wow-delay="0.8s">
+                  <div className="d-flex align-items-center">
+                    <i className="fa fa-comments fa-2x text-primary me-3"></i>
+                    <h5 className="mb-0">Transparent communication</h5>
+                  </div>
+                </div>
+                <div className="col-12 wow fadeIn" data-wow-delay="0.9s">
+                  <div className="d-flex align-items-center">
+                    <i className="fa fa-network-wired fa-2x text-primary me-3"></i>
+                    <h5 className="mb-0">Strong global network</h5>
+                  </div>
+                </div>
+                <div className="col-12 wow fadeIn" data-wow-delay="1.0s">
+                  <div className="d-flex align-items-center">
+                    <i className="fa fa-heart fa-2x text-primary me-3"></i>
+                    <h5 className="mb-0">Customer-centric approach</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -42,27 +83,27 @@ function About() {
         <div className="container feature py-5 px-lg-0">
           <div className="row g-5 mx-lg-0">
             <div className="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
-              <h6 className="text-secondary text-uppercase mb-3">Our Features</h6>
-                <h1 className="mb-5">Trusted Logistics Partner Serving Multiple Industries</h1>
+              <h6 className="text-secondary text-uppercase mb-3">Our Capabilities</h6>
+              <h1 className="mb-5">Complete Transportation & Supply Chain Solutions</h1>
               <div className="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                <i className="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
+                <i className="fa fa-route text-primary fa-3x flex-shrink-0"></i>
                 <div className="ms-4">
-                  <h5>Technology-Driven Operations</h5>
-                  <p className="mb-0">GPS-enabled fleet, automated tracking systems, and smart route planning for transparency at every step.</p>
+                  <h5>Planning, Routing & Booking</h5>
+                  <p className="mb-0">End-to-end freight forwarding covering planning, routing, booking, tracking, and delivery worldwide.</p>
                 </div>
               </div>
               <div className="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
-                <i className="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
+                <i className="fa fa-warehouse text-primary fa-3x flex-shrink-0"></i>
                 <div className="ms-4">
-                  <h5>Safety & Compliance First</h5>
-                  <p className="mb-0">Strict operational checks, quality standards, insurance options, and compliance with all regulations.</p>
+                  <h5>Warehousing & Distribution</h5>
+                  <p className="mb-0">Short-term and long-term storage, inventory management, and distribution support as per client needs.</p>
                 </div>
               </div>
               <div className="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
-                <i className="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
+                <i className="fa fa-shield-alt text-primary fa-3x flex-shrink-0"></i>
                 <div className="ms-4">
-                  <h5>Dedicated Customer Support</h5>
-                  <p className="mb-0">Available throughout the shipping journey for updates, queries, and assistance for all your logistics needs.</p>
+                  <h5>Compliance & Documentation</h5>
+                  <p className="mb-0">Complete customs compliance, documentation, duty handling, and licensing assistance for smooth clearance.</p>
                 </div>
               </div>
             </div>

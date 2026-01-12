@@ -10,7 +10,8 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Team from './pages/Team';
-import Testimonial from './pages/Testimonial';
+import Blog from './pages/Blog';
+import TermsConditions from './pages/TermsConditions';
 
 function App() {
   useEffect(() => {
@@ -35,7 +36,6 @@ function App() {
         await loadScript(`${process.env.PUBLIC_URL}/lib/easing/easing.min.js`);
         await loadScript(`${process.env.PUBLIC_URL}/lib/waypoints/waypoints.min.js`);
         await loadScript(`${process.env.PUBLIC_URL}/lib/counterup/counterup.min.js`);
-        await loadScript(`${process.env.PUBLIC_URL}/lib/owlcarousel/owl.carousel.min.js`);
         await loadScript(`${process.env.PUBLIC_URL}/js/main.js`);
 
         // Initialize WOW.js
@@ -62,7 +62,8 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />

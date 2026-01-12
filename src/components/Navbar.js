@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light shadow p-0 px-3 px-lg-5">
       <NavLink to="/" className="navbar-brand d-flex align-items-center">
-        <h4 className="my-2 ms-3"><span className="text-dark">GCS</span> <span className="text-primary">LOGISTICS</span></h4>
+        <h4 className="my-2 ms-3"><span className="text-dark">GCS</span> <span className="text-primary">LOGISTIC</span></h4>
       </NavLink>
       <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onClick={() => setIsOpen(!isOpen)}>
         <span className="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@ function Navbar() {
           <NavLink to="/about" className="nav-item nav-link" onClick={handleNavLinkClick}>About</NavLink>
           <NavLink to="/services" className="nav-item nav-link" onClick={handleNavLinkClick}>Services</NavLink>
           <NavLink to="/team" className="nav-item nav-link" onClick={handleNavLinkClick}>Our Team</NavLink>
-          <NavLink to="/testimonial" className="nav-item nav-link" onClick={handleNavLinkClick}>Testimonial</NavLink>
+            <NavLink to="/blog" className="nav-item nav-link" onClick={handleNavLinkClick}>Blogs</NavLink>
           <NavLink to="/contact" className="nav-item nav-link" onClick={handleNavLinkClick}>Contact</NavLink>
         </div>
       </div>
