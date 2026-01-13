@@ -11,6 +11,15 @@
     font-weight: 600 !important;
 }
 
+@media (max-width: 576px) {
+    .container-xxl {
+        overflow-x: hidden !important;
+    }
+    .row {
+        overflow-x: hidden !important;
+    }
+}
+
 .back-to-top {
     position: fixed;
     display: none;

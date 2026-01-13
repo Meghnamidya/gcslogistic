@@ -3,51 +3,17 @@ import React from 'react';
 function TermsConditions() {
   return (
     <div>
-      {/* Hero Header Start */}
-      <div className="container-fluid p-0 pb-5 mb-5">
-        <div
-          className="position-relative"
-          style={{
-            minHeight: '400px',
-            backgroundImage: 'linear-gradient(rgba(6,3,21,0.6), rgba(6,3,21,0.6)), url("img/home.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        >
-          <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-            <div className="container">
-              <div className="row justify-content-center text-center">
-                <div className="col-12 col-lg-8">
-                  <h6 className="text-white text-uppercase mb-3 wow fadeInDown" data-wow-delay="0.1s">Legal Information</h6>
-                  <h1 className="display-4 text-white mb-4 wow fadeInUp" data-wow-delay="0.3s">Terms & Conditions</h1>
-                  <p className="text-white fs-5 mb-0 wow fadeInUp" data-wow-delay="0.5s">Please read these terms carefully before using our services</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Hero Header End */}
-
-      {/* Introduction Start */}
+      {/* Header Section Start */}
       <div className="container-xxl py-5">
-        <div className="container">
-          <div className="row g-5">
-            <div className="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-              <div className="p-5" style={{background: 'linear-gradient(135deg, #E0F7FF 0%, #F0FBFF 100%)', borderRadius: '12px'}}>
-                <div className="d-flex align-items-start mb-4">
-                  <i className="fa fa-info-circle fa-3x text-primary me-4"></i>
-                  <div>
-                    <h3 className="mb-3">Welcome to GCS Logistic</h3>
-                    <p className="mb-0">These Terms and Conditions outline the rules and regulations for the use of our services and website. By accessing and using our logistics and shipping services, you accept and agree to be bound by the terms and provisions of this agreement.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="container py-5">
+          <div className="text-center wow fadeInDown" data-wow-delay="0.1s">
+            <h6 className="text-secondary text-uppercase">Legal Information</h6>
+            <h1 className="mb-5">Terms & Conditions</h1>
+            <p className="fs-5 mb-4">Important guidelines and policies governing the use of our services</p>
           </div>
         </div>
       </div>
-      {/* Introduction End */}
+      {/* Header Section End */}
 
       {/* Terms Content Start */}
       <div className="container-xxl py-5">

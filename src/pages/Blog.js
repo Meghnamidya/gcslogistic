@@ -63,9 +63,9 @@ function Blog() {
       {/* Blog Posts Start */}
       <div className="container-xxl py-5">
         <div className="container py-5">
-          <div className="text-center mx-auto mb-5" style={{maxWidth: '600px'}}>
+          <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth: '600px'}}>
             <h6 className="text-primary text-uppercase mb-3">Latest Updates</h6>
-            <h1 className="mb-3" style={{whiteSpace: 'nowrap'}}>Our Logistics & Shipping Services</h1>
+            <h1 className="mb-3">Latest Blog Posts</h1>
           </div>
           <div className="row g-4">
             {blogPosts.map((post) => (

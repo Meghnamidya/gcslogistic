@@ -16,7 +16,8 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light shadow p-0 px-3 px-lg-5">
       <NavLink to="/" className="navbar-brand d-flex align-items-center">
-        <h4 className="my-2 ms-3"><span className="text-dark">GCS</span> <span className="text-primary">LOGISTIC</span></h4>
+        <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="GCS Logistic Logo" style={{height: '70px', marginRight: '10px'}} />
+        <h4 className="my-2"><span className="text-dark">GCS</span> <span className="text-primary">LOGISTIC</span></h4>
       </NavLink>
       <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onClick={() => setIsOpen(!isOpen)}>
         <span className="navbar-toggler-icon"></span>
