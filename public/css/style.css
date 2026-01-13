@@ -175,6 +175,13 @@
 }
 
 
+/* Custom: Make navbar links bigger */
+
+.navbar-nav .nav-link {
+    font-size: 1rem !important;
+}
+
+
 /*** Header ***/
 
 @media (max-width: 768px) {
