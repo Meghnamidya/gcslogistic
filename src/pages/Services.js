@@ -15,7 +15,7 @@ function Services() {
             <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
               <div className="service-item p-4" style={{background: 'linear-gradient(135deg, #E0F7FF 0%, #F0FBFF 100%)', borderRadius: '12px', display: 'flex', flexDirection: 'column', height: '100%'}}>
                 <div className="overflow-hidden mb-4">
-                  <img className="img-fluid" src="img/service-1.jpg" alt="" />
+                  <img className="img-fluid" src="img/service-2.jpg" alt="" />
                 </div>
                 <h4 className="mb-3">Ocean Freight Services</h4>
                 <p>FCL and LCL services for export and import cargo. Partnerships with major shipping lines ensure reliable sailings and competitive rates.</p>
@@ -25,7 +25,7 @@ function Services() {
             <div className="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
               <div className="service-item p-4" style={{background: 'linear-gradient(135deg, #E0F7FF 0%, #F0FBFF 100%)', borderRadius: '12px', display: 'flex', flexDirection: 'column', height: '100%'}}>
                 <div className="overflow-hidden mb-4">
-                  <img className="img-fluid" src="img/service-2.jpg" alt="" />
+                  <img className="img-fluid" src="img/service-1.jpg" alt="" />
                 </div>
                 <h4 className="mb-3">Air Freight Services</h4>
                 <p>Time-sensitive air freight solutions guaranteeing fast delivery with efficient handling, documentation support, and global coverage.</p>
