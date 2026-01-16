@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function Blog() {
   const blogPosts = [
@@ -67,28 +67,9 @@ function Blog() {
             <h6 className="text-primary text-uppercase mb-3">Latest Updates</h6>
             <h1 className="mb-3">Latest Blog Posts</h1>
           </div>
-          <div className="row g-4">
-            {blogPosts.map((post) => (
-              <div key={post.id} className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay={`${0.1 * post.id}s`}>
-                <div className="h-100 p-4 d-flex flex-column" style={{background: 'linear-gradient(135deg, #E0F7FF 0%, #F0FBFF 100%)', borderRadius: '12px', border: '1px solid rgba(18, 162, 252, 0.15)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', transition: 'transform 0.3s, box-shadow 0.3s'}}>
-                  <div className="d-flex align-items-center mb-3">
-                    <div className="flex-shrink-0 me-3">
-                      <div className="d-flex align-items-center justify-content-center" style={{width: '60px', height: '60px', background: 'rgba(18, 162, 252, 0.1)', borderRadius: '12px'}}>
-                        <i className={`fas ${post.icon} fa-2x text-primary`}></i>
-                      </div>
-                    </div>
-                    <div className="flex-grow-1">
-                      <h4 className="mb-0">{post.title}</h4>
-                    </div>
-                  </div>
-                  <p className="mb-3 flex-grow-1" style={{color: '#666', lineHeight: '1.7'}}>{post.excerpt}</p>
-                  <div className="d-flex justify-content-between align-items-center pt-3" style={{borderTop: '1px solid rgba(18, 162, 252, 0.1)'}}>
-                    <small className="text-muted"><i className="fa fa-user me-2"></i>{post.author}</small>
-                    <small className="text-muted"><i className="fa fa-calendar-alt me-1"></i>{post.date}</small>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div>
+            {/* Simple React carousel (no external slider lib) */}
+            <BlogCarousel posts={blogPosts} />
           </div>
         </div>
       </div>
@@ -99,3 +80,136 @@ function Blog() {
 }
 
 export default Blog;
+
+function BlogCarousel({ posts }) {
+  const originals = posts || [];
+  const [perView, setPerView] = useState(3);
+  const startIndex = originals.length; // middle copy start
+  const [index, setIndex] = useState(startIndex);
+  const [transitionEnabled, setTransitionEnabled] = useState(true);
+  const containerRef = useRef(null);
+  const autoplayRef = useRef(null);
+  const resetTimerRef = useRef(null);
+
+  // responsive perView
+  useEffect(() => {
+    function updatePerView() {
+      const w = window.innerWidth;
+      if (w < 768) setPerView(1);
+      else if (w < 992) setPerView(2);
+      else setPerView(3);
+    }
+    updatePerView();
+    window.addEventListener('resize', updatePerView);
+    return () => window.removeEventListener('resize', updatePerView);
+  }, []);
+
+  // create triple slides for seamless loop
+  const slides = [...originals, ...originals, ...originals];
+
+  // reset to middle copy when posts change
+  useEffect(() => {
+    setIndex(startIndex);
+  }, [originals.length]);
+
+  // autoplay
+  useEffect(() => {
+    clearInterval(autoplayRef.current);
+    autoplayRef.current = setInterval(() => setIndex((i) => i + 1), 4000);
+    return () => clearInterval(autoplayRef.current);
+  }, [perView, originals.length]);
+
+  const slideWidth = 100 / perView; // percent per slide
+  const translateX = -(index * slideWidth);
+
+  // when index moves into cloned area, jump to equivalent middle index without transition
+  useEffect(() => {
+    if (originals.length === 0) return;
+    const middle = originals.length;
+    // compute normalized position within originals
+    if (index >= originals.length * 2 || index < originals.length) {
+      // wait for animation to finish then reset without transition
+      clearTimeout(resetTimerRef.current);
+      resetTimerRef.current = setTimeout(() => {
+        setTransitionEnabled(false);
+        const rel = ((index - middle) % originals.length + originals.length) % originals.length;
+        setIndex(middle + rel);
+        // re-enable transition on next frame
+        requestAnimationFrame(() => requestAnimationFrame(() => setTransitionEnabled(true)));
+      }, 520); // slightly longer than CSS transition (500ms)
+    }
+    return () => clearTimeout(resetTimerRef.current);
+  }, [index, originals.length]);
+
+  const maxStart = Math.max(0, originals.length - perView);
+  const pageCount = maxStart + 1;
+
+  function goPrev() {
+    setIndex((i) => i - 1);
+    resetAutoplay();
+  }
+
+  function goNext() {
+    setIndex((i) => i + 1);
+    resetAutoplay();
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayRef.current);
+    autoplayRef.current = setInterval(() => setIndex((i) => i + 1), 4000);
+  }
+
+  return (
+    <div style={{ position: 'relative' }}>
+      <div style={{ overflow: 'hidden' }} ref={containerRef}>
+        <div style={{ display: 'flex', transition: transitionEnabled ? 'transform 500ms ease' : 'none', transform: `translateX(${translateX}%)` }}>
+          {slides.map((post, i) => (
+            <div key={`${post.id}-${i}`} style={{ flex: `0 0 ${slideWidth}%`, padding: '0 12px', boxSizing: 'border-box' }}>
+              <div className="h-100 p-4 d-flex flex-column wow fadeInUp" data-wow-delay={`${0.1 * post.id}s`} style={{background: 'linear-gradient(135deg, #E0F7FF 0%, #F0FBFF 100%)', borderRadius: '12px', border: '1px solid rgba(18, 162, 252, 0.15)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}}>
+                <div className="d-flex align-items-center mb-3">
+                  <div className="flex-shrink-0 me-3">
+                    <div className="d-flex align-items-center justify-content-center" style={{width: '60px', height: '60px', background: 'rgba(18, 162, 252, 0.1)', borderRadius: '12px'}}>
+                      <i className={`fas ${post.icon} fa-2x text-primary`}></i>
+                    </div>
+                  </div>
+                  <div className="flex-grow-1">
+                    <h4 className="mb-0">{post.title}</h4>
+                  </div>
+                </div>
+                <p className="mb-3 flex-grow-1" style={{color: '#666', lineHeight: '1.7'}}>{post.excerpt}</p>
+                <div className="d-flex justify-content-between align-items-center pt-3" style={{borderTop: '1px solid rgba(18, 162, 252, 0.1)'}}>
+                  <small className="text-muted"><i className="fa fa-user me-2"></i>{post.author}</small>
+                  <small className="text-muted"><i className="fa fa-calendar-alt me-1"></i>{post.date}</small>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/** Navigation buttons: position outside carousel when multiple slides visible. */}
+      {(() => {
+        const navVisible = perView > 1;
+        const navBase = { position: 'absolute', top: '50%', transform: 'translateY(-50%)', zIndex: 5 };
+        const leftStyle = { ...navBase, left: navVisible ? -28 : 8 };
+        const rightStyle = { ...navBase, right: navVisible ? -28 : 8 };
+        const btnClass = 'btn btn-sm btn-outline-primary';
+        return (
+          <>
+            <button onClick={goPrev} aria-label="Previous" style={leftStyle} className={btnClass}>‹</button>
+            <button onClick={goNext} aria-label="Next" style={rightStyle} className={btnClass}>›</button>
+          </>
+        );
+      })()}
+      <div style={{textAlign: 'center', marginTop: '38px'}}>
+        {Array.from({ length: pageCount }).map((_, p) => {
+          const middle = originals.length;
+          const rel = ((index - middle) % originals.length + originals.length) % originals.length;
+          const currentStart = Math.min(rel, Math.max(0, originals.length - perView));
+          return (
+            <button key={p} onClick={() => { setIndex(middle + p); resetAutoplay(); }} aria-label={`Go to page ${p+1}`} style={{width: '10px', height: '10px', borderRadius: '50%', margin: '0 6px', border: 'none', background: p === currentStart ? '#127afc' : '#ddd'}} />
+          );
+        })}
+      </div>
+    </div>
+  );
+}
