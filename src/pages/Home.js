@@ -103,19 +103,19 @@ function Home() {
                 <div className="col-sm-6">
                   <div className="bg p-4 mb-4 wow fadeIn" style={{backgroundColor: "#fe3f49ff"}} data-wow-delay="0.3s">
                     <i className="fa fa-users fa-2x text-white mb-3"></i>
-                    <h2 className="text-white mb-2" data-toggle="counter-up">10</h2>
+                    <h2 className="text-white mb-2" data-toggle="counter-up">10+</h2>
                     <p className="text-white mb-0">Happy Clients</p>
                   </div>
                   <div className="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
                     <i className="fa fa-ship fa-2x text-white mb-3"></i>
-                    <h2 className="text-white mb-2" data-toggle="counter-up">10</h2>
+                    <h2 className="text-white mb-2" data-toggle="counter-up">10+</h2>
                     <p className="text-white mb-0">Complete Shipments</p>
                   </div>
                 </div>
                 <div className="col-sm-6">
                   <div className="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
                     <i className="fa fa-star fa-2x text-white mb-3"></i>
-                    <h2 className="text-white mb-2" data-toggle="counter-up">10</h2>
+                    <h2 className="text-white mb-2" data-toggle="counter-up">5+</h2>
                     <p className="text-white mb-0">Customer Reviews</p>
                   </div>
                 </div>
