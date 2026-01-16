@@ -118,10 +118,6 @@ function BlogCarousel({ posts }) {
     autoplayRef.current = setInterval(() => setIndex((i) => i + 1), 4000);
     return () => clearInterval(autoplayRef.current);
   }, [perView, originals.length]);
-
-  const slideWidth = 100 / perView; // percent per slide
-  const translateX = -(index * slideWidth);
-
   // when index moves into cloned area, jump to equivalent middle index without transition
   useEffect(() => {
     if (originals.length === 0) return;
@@ -141,8 +137,14 @@ function BlogCarousel({ posts }) {
     return () => clearTimeout(resetTimerRef.current);
   }, [index, originals.length]);
 
+  const slideWidth = 100 / perView; // percent per slide
+  const translateX = -(index * slideWidth);
+
+  // if no originals, render nothing (hooks already initialized above)
+  if (originals.length === 0) return null;
+
   const maxStart = Math.max(0, originals.length - perView);
-  const pageCount = maxStart + 1;
+  const pageCount = Math.max(1, maxStart + 1);
 
   function goPrev() {
     setIndex((i) => i - 1);
