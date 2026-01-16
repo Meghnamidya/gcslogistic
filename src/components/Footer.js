@@ -36,8 +36,8 @@ function Footer() {
             <h4 className="text-light mb-4">Have a Questions?</h4>
             <p className="mb-2" style={{fontSize: '15px'}}><i className="fa fa-map-marker-alt me-3"></i>Astra Tower, ASO-715, Action Area IIC, Newtown, Kolkata - 700161, India.</p>
             <p className="mb-2" style={{fontSize: '15px'}}><i className="fa fa-phone-alt me-3"></i>+91 7003687053</p>
-            <p className="mb-2" style={{fontSize: '15px'}}><i className="fa fa-envelope me-3"></i>info@gcslogistic.com</p>
-            <p className="mb-2" style={{fontSize: '15px'}}><i className="fa fa-globe me-3"></i>www.gcslogistic.com</p>
+            <p className="mb-2" style={{fontSize: '15px'}}><i className="fa fa-envelope me-3"></i>info@gcslogistics.com</p>
+            <p className="mb-2" style={{fontSize: '15px'}}><i className="fa fa-globe me-3"></i>www.gcslogistics.com</p>
           </div>
         </div>
       </div>

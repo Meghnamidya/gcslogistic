@@ -44,7 +44,7 @@ function Contact() {
                       <i className="fas fa-paper-plane"></i>
                     </div>
                     <h3 className="mb-3" style={{fontSize: '18px', fontWeight: '600', color: '#ffffff'}}>Email Address</h3>
-                    <p style={{fontSize: '14px', marginBottom: '0', color: '#000000'}}><a href="mailto:info@gcslogistic.com" style={{color: '#000000', textDecoration: 'none', fontWeight: '500'}}>info@gcslogistic.com</a></p>
+                    <p style={{fontSize: '14px', marginBottom: '0', color: '#000000'}}><a href="mailto:info@gcslogistics.com" style={{color: '#000000', textDecoration: 'none', fontWeight: '500'}}>info@gcslogistics.com</a></p>
                   </div>
                 </div>
                 <div className="col-12 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
@@ -62,7 +62,7 @@ function Contact() {
                       <i className="fas fa-globe"></i>
                     </div>
                     <h3 className="mb-3" style={{fontSize: '18px', fontWeight: '600', color: '#ffffff'}}>Website</h3>
-                    <p style={{fontSize: '15px', marginBottom: '0', color: '#000000'}}><a href="https://gcslogistic.com" style={{color: '#000000', textDecoration: 'none', fontWeight: '500'}}>www.gcslogistic.com</a></p>
+                    <p style={{fontSize: '15px', marginBottom: '0', color: '#000000'}}><a href="https://gcslogistics.com" style={{color: '#000000', textDecoration: 'none', fontWeight: '500'}}>www.gcslogistics.com</a></p>
                   </div>
                 </div>
               </div>
