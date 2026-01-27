@@ -152,7 +152,7 @@ function TermsConditions() {
                     </div>
                     <div className="col-md-4">
                       <p className="mb-1"><i className="fa fa-envelope me-2"></i><strong>Email</strong></p>
-                      <p>info@gcslogistics.com</p>
+                      <p>info@gcslogistic.com</p>
                     </div>
                     <div className="col-md-4">
                       <p className="mb-1"><i className="fa fa-map-marker-alt me-2"></i><strong>Address</strong></p>
