@@ -9,7 +9,7 @@ function Footer() {
         <div className="row g-5">
           <div className="col-lg-3 col-md-6">
             <h4 className="text-light mb-4">About GCS Logistic</h4>
-            <p>GCS Logistic delivers end-to-end transportation, shipping, and warehousing solutions with a strong network, technology-driven operations, and a skilled team.</p>
+            <p>GCS Logistic delivers end-to-end transportation, shipping and warehousing solutions with a strong network, technology-driven operations and a skilled team.</p>
             <div className="d-flex pt-2">
               <a className="btn btn-outline-light btn-social" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
@@ -26,11 +26,11 @@ function Footer() {
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-light mb-4">Services</h4>
-            <Link className="btn btn-link" style={{fontSize: '15px'}} to="">Air Freight</Link>
-            <Link className="btn btn-link" style={{fontSize: '15px'}} to="">Sea Freight</Link>
-            <Link className="btn btn-link" style={{fontSize: '15px'}} to="">Road Freight</Link>
-            <Link className="btn btn-link" style={{fontSize: '15px'}} to="">Warehousing</Link>
-            <Link className="btn btn-link" style={{fontSize: '15px'}} to="">Customs Clearance</Link>
+            <Link className="btn btn-link" style={{fontSize: '15px'}} to="/services">Air Freight</Link>
+            <Link className="btn btn-link" style={{fontSize: '15px'}} to="/services">Sea Freight</Link>
+            <Link className="btn btn-link" style={{fontSize: '15px'}} to="/services">Road Freight</Link>
+            <Link className="btn btn-link" style={{fontSize: '15px'}} to="/services">Warehousing</Link>
+            <Link className="btn btn-link" style={{fontSize: '15px'}} to="/services">Customs Clearance</Link>
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-light mb-4">Have a Questions?</h4>

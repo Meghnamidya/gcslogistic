@@ -28,7 +28,7 @@ function Home() {
                 <div className="col-12 col-lg-8">
                   <h5 className="text-white text-uppercase mb-3">GCS Logistic & Shipping Company</h5>
                   <h1 className="display-4 text-white mb-4">Reliable Logistics & Shipping Solutions for Your Business</h1>
-                  <h4 className="fs-5 fw-medium text-white mb-4 pb-2">Fast, secure and cost-effective freight forwarding, customs clearance, and transportation services across India and worldwide.</h4>
+                  <h4 className="fs-5 fw-medium text-white mb-4 pb-2">Fast, secure and cost-effective freight forwarding, customs clearance and transportation services across India and worldwide.</h4>
                   <a href="/contact" className="btn btn-primary py-md-3 px-md-5">Get in Touch</a>
                 </div>
               </div>
@@ -50,7 +50,7 @@ function Home() {
             <div className="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
               <h6 className="text-secondary text-uppercase mb-3">Welcome to GCS Logistic</h6>
               <h1 className="mb-4">End-to-End Logistics & Shipping Solutions</h1>
-              <p className="mb-4">Welcome to GCS Logistic, your trusted partner in end-to-end logistics and shipping solutions. We specialize in international and domestic freight movement through sea and air, providing seamless transportation, customs clearance, warehousing, and door-to-door delivery services. Our mission is to make global trade simple, efficient, and stress-free for businesses of all sizes.</p>
+              <p className="mb-4">Welcome to GCS Logistic, your trusted partner in end-to-end logistics and shipping solutions. We specialize in international and domestic freight movement through sea and air, providing seamless transportation, customs clearance, warehousing and door-to-door delivery services. Our mission is to make global trade simple, efficient and stress-free for businesses of all sizes.</p>
               <div className="row g-4 mb-4">
                 <div className="col-12 wow fadeIn" data-wow-delay="0.4s">
                   <div className="d-flex align-items-center">
@@ -96,7 +96,7 @@ function Home() {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
               <h6 className="text-secondary text-uppercase mb-3">Our Strengths</h6>
               <h1 className="mb-5">Trusted Logistics Excellence</h1>
-              <p className="mb-5">Wide transportation network, skilled team, smart route optimization, and competitive pricing. We deliver excellence through reliable logistics services, innovation, and customer-first solutions.</p>
+              <p className="mb-5">Wide transportation network, skilled team, smart route optimization and competitive pricing. We deliver excellence through reliable logistics services, innovation and customer-first solutions.</p>
               <div className="d-flex align-items-center">
                 <i className="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                 <div className="ps-4">

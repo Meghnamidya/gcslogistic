@@ -5,7 +5,7 @@ function Blog() {
     {
       id: 1,
       title: 'Understanding International Freight Forwarding',
-      excerpt: 'Learn about the essential aspects of international freight forwarding and how it streamlines global trade operations for businesses of all sizes. Discover key strategies for optimizing shipping routes, managing documentation, and ensuring compliance with international regulations. Our comprehensive approach helps reduce costs while maintaining reliability and efficiency throughout the supply chain process.',
+      excerpt: 'Learn about the essential aspects of international freight forwarding and how it streamlines global trade operations for businesses of all sizes. Discover key strategies for optimizing shipping routes, managing documentation and ensuring compliance with international regulations. Our comprehensive approach helps reduce costs while maintaining reliability and efficiency throughout the supply chain process.',
       date: 'January 8, 2026',
       author: 'GCS Logistic Team',
       category: 'Freight Services',
@@ -14,7 +14,7 @@ function Blog() {
     {
       id: 2,
       title: 'Customs Clearance: A Complete Guide',
-      excerpt: 'Navigate the complexities of customs clearance with our comprehensive guide covering documentation, compliance, and best practices for smooth cargo release. Understanding tariff classifications, import duties, and regulatory requirements is crucial for avoiding delays and penalties. We provide expert guidance on preparing accurate documentation and maintaining compliance with changing international trade regulations.',
+      excerpt: 'Navigate the complexities of customs clearance with our comprehensive guide covering documentation, compliance and best practices for smooth cargo release. Understanding tariff classifications, import duties and regulatory requirements is crucial for avoiding delays and penalties. We provide expert guidance on preparing accurate documentation and maintaining compliance with changing international trade regulations.',
       date: 'January 5, 2026',
       author: 'GCS Logistic Team',
       category: 'Customs & Compliance',
@@ -23,7 +23,7 @@ function Blog() {
     {
       id: 3,
       title: 'Air vs Sea Freight: Choosing the Right Option',
-      excerpt: 'Compare air and sea freight options to determine the most cost-effective and efficient shipping method for your cargo based on urgency and budget. Consider factors such as transit time, shipment size, cargo value, and destination accessibility. Learn how to balance speed with cost-effectiveness and make informed decisions that align with your business objectives and customer expectations.',
+      excerpt: 'Compare air and sea freight options to determine the most cost-effective and efficient shipping method for your cargo based on urgency and budget. Consider factors such as transit time, shipment size, cargo value and destination accessibility. Learn how to balance speed with cost-effectiveness and make informed decisions that align with your business objectives and customer expectations.',
       date: 'January 2, 2026',
       author: 'GCS Logistic Team',
       category: 'Shipping Solutions',
@@ -50,7 +50,7 @@ function Blog() {
     {
       id: 6,
       title: 'Top 5 Logistics Trends in 2026',
-      excerpt: 'Stay ahead of the curve with insights into the latest logistics trends shaping the industry, from automation to sustainability initiatives. Explore emerging technologies like AI-powered route optimization, blockchain for supply chain transparency, and green logistics practices. Understanding these trends helps businesses adapt and maintain competitive advantage in an evolving marketplace.',
+      excerpt: 'Stay ahead of the curve with insights into the latest logistics trends shaping the industry, from automation to sustainability initiatives. Explore emerging technologies like AI-powered route optimization, blockchain for supply chain transparency and green logistics practices. Understanding these trends helps businesses adapt and maintain competitive advantage in an evolving marketplace.',
       date: 'December 18, 2025',
       author: 'GCS Logistic Team',
       category: 'Industry Insights',

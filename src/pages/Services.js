@@ -28,7 +28,7 @@ function Services() {
                   <img className="img-fluid" src="img/service-1.jpg" alt="" />
                 </div>
                 <h4 className="mb-3">Air Freight Services</h4>
-                <p>Time-sensitive air freight solutions guaranteeing fast delivery with efficient handling, documentation support, and global coverage.</p>
+                <p>Time-sensitive air freight solutions guaranteeing fast delivery with efficient handling, documentation support and global coverage.</p>
                 <a className="btn-slide" style={{marginTop: 'auto'}} href="/contact"><i className="fa fa-arrow-right"></i><span>Contact Us</span></a>
               </div>
             </div>
@@ -38,7 +38,7 @@ function Services() {
                   <img className="img-fluid" src="img/service-3.jpg" alt="" />
                 </div>
                 <h4 className="mb-3">Customs Clearance</h4>
-                <p>Assistance with documentation, duties, licensing, and clearance procedures to ensure smooth release of cargo without delays.</p>
+                <p>Assistance with documentation, duties, licensing and clearance procedures to ensure smooth release of cargo without delays.</p>
                 <a className="btn-slide" style={{marginTop: 'auto'}} href="/contact"><i className="fa fa-arrow-right"></i><span>Contact Us</span></a>
               </div>
             </div>
@@ -48,7 +48,7 @@ function Services() {
                   <img className="img-fluid" src="img/service-4.jpg" alt="" />
                 </div>
                 <h4 className="mb-3">Transportation & Door-to-Door Delivery</h4>
-                <p>Inland transportation through trusted trucking partners to deliver cargo safely to factories, warehouses, and final destinations.</p>
+                <p>Inland transportation through trusted trucking partners to deliver cargo safely to factories, warehouses and final destinations.</p>
                 <a className="btn-slide" style={{marginTop: 'auto'}} href="/contact"><i className="fa fa-arrow-right"></i><span>Contact Us</span></a>
               </div>
             </div>
@@ -68,7 +68,7 @@ function Services() {
                   <img className="img-fluid" src="img/service-6.jpg" alt="" />
                 </div>
                 <h4 className="mb-3">Freight Forwarding Solutions</h4>
-                <p>End-to-end freight forwarding services covering planning, routing, booking, tracking, and delivery of shipments worldwide.</p>
+                <p>End-to-end freight forwarding services covering planning, routing, booking, tracking and delivery of shipments worldwide.</p>
                 <a className="btn-slide" style={{marginTop: 'auto'}} href="/contact"><i className="fa fa-arrow-right"></i><span>Contact Us</span></a>
               </div>
             </div>

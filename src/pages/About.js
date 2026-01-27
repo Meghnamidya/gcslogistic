@@ -16,15 +16,15 @@ function About() {
             <div className="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
               <h6 className="text-secondary text-uppercase mb-3">About Us</h6>
               <h1 className="mb-4">About GCS Logistic Company</h1>
-              <p className="mb-4">GCS Logistic & Shipping Company is a professional freight forwarding and logistics service provider offering complete transportation and supply chain solutions under one roof. With a strong network of carriers, agents, and port partners, we handle shipments efficiently from origin to destination.</p>
-              <p className="mb-5">We work with exporters, importers, manufacturers, traders, and individual clients to ensure smooth movement of goods across borders. Our experienced team manages every step — documentation, customs compliance, freight booking, warehousing, and delivery — so you can focus on your business.</p>
+              <p className="mb-4">GCS Logistic & Shipping Company is a professional freight forwarding and logistics service provider offering complete transportation and supply chain solutions under one roof. With a strong network of carriers, agents and port partners, we handle shipments efficiently from origin to destination.</p>
+              <p className="mb-5">We work with exporters, importers, manufacturers, traders and individual clients to ensure smooth movement of goods across borders. Our experienced team manages every step — documentation, customs compliance, freight booking, warehousing and delivery — so you can focus on your business.</p>
               <div className="row g-4 mb-4">
                 <div className="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
                   <div className="d-flex align-items-start">
                     <i className="fa fa-bullseye fa-2x text-primary me-3"></i>
                     <div>
                       <h5 className="mb-2">Our Vision</h5>
-                      <p className="m-0">To become a trusted global logistics partner known for reliability, transparency, and customer satisfaction.</p>
+                      <p className="m-0">To become a trusted global logistics partner known for reliability, transparency and customer satisfaction.</p>
                     </div>
                   </div>
                 </div>
@@ -33,7 +33,7 @@ function About() {
                     <i className="fa fa-rocket fa-2x text-primary me-3"></i>
                     <div>
                       <h5 className="mb-2">Our Mission</h5>
-                      <p className="m-0">To deliver safe, timely, and cost-effective logistics solutions through innovation, teamwork, and continuous improvement.</p>
+                      <p className="m-0">To deliver safe, timely and cost-effective logistics solutions through innovation, teamwork and continuous improvement.</p>
                     </div>
                   </div>
                 </div>
@@ -89,21 +89,21 @@ function About() {
                 <i className="fa fa-route text-primary fa-3x flex-shrink-0"></i>
                 <div className="ms-4">
                   <h5>Planning, Routing & Booking</h5>
-                  <p className="mb-0">End-to-end freight forwarding covering planning, routing, booking, tracking, and delivery worldwide.</p>
+                  <p className="mb-0">End-to-end freight forwarding covering planning, routing, booking, tracking and delivery worldwide.</p>
                 </div>
               </div>
               <div className="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
                 <i className="fa fa-warehouse text-primary fa-3x flex-shrink-0"></i>
                 <div className="ms-4">
                   <h5>Warehousing & Distribution</h5>
-                  <p className="mb-0">Short-term and long-term storage, inventory management, and distribution support as per client needs.</p>
+                  <p className="mb-0">Short-term and long-term storage, inventory management and distribution support as per client needs.</p>
                 </div>
               </div>
               <div className="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
                 <i className="fa fa-shield-alt text-primary fa-3x flex-shrink-0"></i>
                 <div className="ms-4">
                   <h5>Compliance & Documentation</h5>
-                  <p className="mb-0">Complete customs compliance, documentation, duty handling, and licensing assistance for smooth clearance.</p>
+                  <p className="mb-0">Complete customs compliance, documentation, duty handling and licensing assistance for smooth clearance.</p>
                 </div>
               </div>
             </div>

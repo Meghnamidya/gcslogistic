@@ -27,7 +27,7 @@ function TermsConditions() {
                   <i className="fa fa-shipping-fast fa-2x text-primary me-3 flex-shrink-0"></i>
                   <h4 className="mb-0">Services Provided</h4>
                 </div>
-                <p className="mb-0">GCS Logistic offers freight forwarding, customs clearance, warehousing, transportation, and door-to-door delivery services for both domestic and international shipments. All services are subject to availability and our operational capabilities.</p>
+                <p className="mb-0">GCS Logistic offers freight forwarding, customs clearance, warehousing, transportation and door-to-door delivery services for both domestic and international shipments. All services are subject to availability and our operational capabilities.</p>
               </div>
             </div>
 
@@ -38,7 +38,7 @@ function TermsConditions() {
                   <i className="fa fa-user-check fa-2x text-primary me-3 flex-shrink-0"></i>
                   <h4 className="mb-0">User Responsibilities</h4>
                 </div>
-                <p className="mb-0">Clients are responsible for providing accurate shipment information, proper packaging, and ensuring all necessary documentation is complete and compliant with applicable regulations.</p>
+                <p className="mb-0">Clients are responsible for providing accurate shipment information, proper packaging and ensuring all necessary documentation is complete and compliant with applicable regulations.</p>
               </div>
             </div>
 
@@ -71,7 +71,7 @@ function TermsConditions() {
                   <i className="fa fa-file-alt fa-2x text-primary me-3 flex-shrink-0"></i>
                   <h4 className="mb-0">Customs Compliance</h4>
                 </div>
-                <p className="mb-0">Clients are responsible for ensuring their shipments comply with all applicable customs regulations, import/export laws, and restrictions. GCS Logistic will assist with documentation and clearance procedures.</p>
+                <p className="mb-0">Clients are responsible for ensuring their shipments comply with all applicable customs regulations, import/export laws and restrictions. GCS Logistic will assist with documentation and clearance procedures.</p>
               </div>
             </div>
 
