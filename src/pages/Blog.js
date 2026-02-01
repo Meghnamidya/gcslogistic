@@ -108,9 +108,11 @@ function BlogCarousel({ posts }) {
   const slides = [...originals, ...originals, ...originals];
 
   // reset to middle copy when posts change
+  // reset to middle copy when posts change
   useEffect(() => {
     setIndex(startIndex);
-  }, [originals.length]);
+  }, [startIndex, originals.length]);
+
 
   // autoplay
   useEffect(() => {
